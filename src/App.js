@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
+import { NavLink } from 'react-router-dom';
 import logo from './logo.svg';
-import TodoList from './components/todoList'
 
 import './App.css';
 
@@ -11,8 +11,12 @@ class App extends Component {
         <header className="App-header">
           <h1 className="App-title">Welcome to React</h1>
         </header>
+        <ul>
+          <li><NavLink to="/">Home</NavLink ></li>
+          <li><NavLink to="/page-one">Page One</NavLink ></li>
+        </ul>
         <div>
-          <TodoList name='hello' />
+          {this.props.children}
         </div>
       </div>
     );
