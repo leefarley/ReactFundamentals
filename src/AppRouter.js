@@ -4,6 +4,7 @@ import { BrowserRouter } from 'react-router-dom'
 
 import TodoListPage from './components/todoListPage'
 import FormPage from './components/formPage'
+import RequestPage from './components/requestPage'
 
 import App from './App'
 
@@ -13,7 +14,8 @@ class AppRouter extends React.Component {
             <BrowserRouter basename="/">
                 <App>
                     <Route exact path="/" component={TodoListPage} />
-                    <Route path="/page-one" component={FormPage} />
+                    <Route path="/form-page" component={FormPage} />
+                    <Route path="/request-page" component={RequestPage} />
                 </App>
             </BrowserRouter>
         );

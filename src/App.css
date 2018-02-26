@@ -25,7 +25,11 @@
 .menu-item{
   padding: 15px 0;
   display: inline-block;
-  width: 100px;
+  width: 120px;
+}
+
+.strike{
+  text-decoration-line: line-through;
 }
 
 @keyframes App-logo-spin {
