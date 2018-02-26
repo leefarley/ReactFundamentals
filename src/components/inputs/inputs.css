@@ -1,0 +1,12 @@
+.textbox, .submit, .select{
+    padding-top: 10px;
+}
+
+.textbox input[type=text]{
+    padding-left: 4px;
+}
+
+.select select{
+    min-width: 173px;
+    min-height: 21px;
+}

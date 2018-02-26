@@ -2,8 +2,8 @@ import React from 'react'
 import { Route } from 'react-router'
 import { BrowserRouter } from 'react-router-dom'
 
-import TodoList from './components/todoList'
-import PageOne from './components/pageOne'
+import TodoListPage from './components/todoListPage'
+import FormPage from './components/formPage'
 
 import App from './App'
 
@@ -12,8 +12,8 @@ class AppRouter extends React.Component {
         return (
             <BrowserRouter basename="/">
                 <App>
-                    <Route exact path="/" component={TodoList} />
-                    <Route path="/page-one" component={PageOne} />
+                    <Route exact path="/" component={TodoListPage} />
+                    <Route path="/page-one" component={FormPage} />
                 </App>
             </BrowserRouter>
         );

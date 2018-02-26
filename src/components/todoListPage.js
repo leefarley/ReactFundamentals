@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class TodoList extends Component{
+class TodoListPage extends Component{
 
     constructor(props) {
         super(props);
@@ -26,7 +26,7 @@ class TodoList extends Component{
     }
 }
 
-export default TodoList
+export default TodoListPage
 
 // NOTES:
 /*
@@ -51,7 +51,7 @@ there are 4 ways to instancate a component
         return (<div></div>);
     };
 - es6 stateless component function
-    const Pane = (props) => (<div></div>);
+    const ES6StatelessComponent = (props) => (<div></div>);
 
 stateless good for presentation components
 stateful good for container components
